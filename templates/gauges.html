@@ -1,0 +1,79 @@
+<html>
+<head>
+  <title>www.isimizvar.co</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  
+  <script type="text/javascript">
+    var temp = -40;
+    var humd = 53;
+  </script>
+  
+  
+</head>
+
+
+<body>
+  <div style="margin:10px;">
+    <nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">isimizvar.co</a>
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/gauges">Sensor</a>
+      </li>
+      <li>
+        <a href="/sitemap">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+    <div class="jumbotron"  style="padding:40px;">
+      <h1>SENSOR INFO: </h1>
+      <p></p>
+      
+      <p><p>Time: <span id="datetime"></span></p>  
+      <p><p><button onclick="goBack()">Refresh Time Data</button>
+
+      
+
+<script>
+    function goBack() {
+      window.history.go(-0);
+        }
+</script>
+      
+     
+<script>
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
+        
+        
+
+        
+<h3>
+    the temperature : 
+        <script type="text/javascript">
+            document.write(temp)
+          </script>
+</h3> 
+<h3>
+    the humidity :
+        <script type="text/javascript">
+            document.write(humd)
+          </script>
+</h3> 
+        
+  
+     
+    </div>
+  </div>
+</body>
+</html>
